@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "LuuStreamShop/LuuStreamShop/server/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "LuuStreamShop/LuuStreamShop/server/index.ts"
+    }
+  ]
+}
